@@ -1,11 +1,5 @@
 
 jobs:
-
-  # Build job
-  build:
-    # <Not provided for brevity>
-    # At a minimum this job should upload artifacts using actions/upload-pages-artifact
-jobs:
   build:
 
     runs-on: ubuntu-latest
