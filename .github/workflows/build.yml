@@ -15,7 +15,8 @@ jobs:
       - run: npm ci
       - run: npm run build --if-present
       - run: mv dist/* .
-      - run: chmod -R o+rX *
+      - run: cp index.html 404.html
+      - run: chmod -R a+rX .
       - uses: actions/upload-artifact@v4
         with:
           name: github-pages
