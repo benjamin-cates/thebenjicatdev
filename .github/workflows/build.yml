@@ -1,4 +1,6 @@
 
+on: push
+
 jobs:
   build:
 
@@ -22,7 +24,6 @@ jobs:
             !src
   # Deploy job
   deploy:
-    on: push
     needs: build
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
