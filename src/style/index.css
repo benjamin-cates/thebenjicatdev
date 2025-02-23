@@ -1,0 +1,83 @@
+#experience_wrapper {display: flex; justify-content: center;}
+#experience {
+    display: grid; 
+    gap: 1em 1em;
+    grid-template-columns: 1fr 1fr;
+    width: calc(60vw + 6em);
+    margin-bottom: 5rem;
+}
+@media only screen and (max-width: 1000px) {
+    #experience {grid-template-columns: 1fr;width: calc(50vw + 6em);}
+}
+.experience {
+    background: #303030;
+    border-radius: 0.5em;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.experience_title {font-size: 1.6em;margin-bottom: 1rem;}
+.experience_image { display: flex; justify-content: center; margin-bottom: 0.5rem }
+.experience_image > img { 
+    border-radius: 0.7em; 
+    width: calc(10em + 8vw);
+}
+#title_cursor {
+    animation: blinker 1s ease-in-out infinite;
+    display:inline-block;
+    transform: translate(-0.2em,0);
+}
+#title {
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    font-size: calc(min(3rem,9vw));
+    margin-top:10vh;
+    flex-direction: row;
+}
+@media only screen and (max-width: 740px) {
+    #title {flex-direction: column;align-items: center;}
+}
+#title_inner {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 11em;
+    margin-bottom: 2rem;
+}
+#title_text_wrapper {
+    background: rgb(118,25,218);
+    background: linear-gradient(225deg, rgba(118,25,218,1) 0%, rgba(122,30,167,1) 50%, rgba(147,33,118,1) 100%);
+    border-radius:0.4em;
+    padding: 0.4em;
+    min-width: 5em;
+    text-align:center;
+}
+
+#title_description {
+    font-size: 1rem;
+    text-align:center;
+    width: calc(15vw + 10rem);
+    margin-top: 1rem;
+}
+
+@keyframes blinker {
+    20% { opacity: 1.0; }
+    45% { opacity: 0; }
+    50% { opacity: 0; }
+    70% { opacity: 1.0; }
+}
+#contact_info {
+    font-size:0.5em;
+}
+#contact_info > * > a  { display: flex; align-items: center; }
+#contact_info > * > a > svg {margin-right: 0.4em}
+#contact_info {background: #333333; border-radius: 0.5em;padding: 0.5em;}
+#experience_header {
+    font-size:2.5em;
+    color: #EEEEEE;
+    text-align: center;
+    margin-bottom: 2rem;
+}
