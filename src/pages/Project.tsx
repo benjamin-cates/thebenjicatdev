@@ -7,6 +7,7 @@ import { List } from "../componenents/List";
 import { Carousel } from "../componenents/Carousel";
 import { Links } from "../componenents/Links";
 import { Header } from "../componenents/Header";
+import { Photo } from "../componenents/Photo";
 
 interface TwoColumnProps {
     title: string,
@@ -37,13 +38,11 @@ const AntLogic: React.FC = (_props: {}) => {
             <Section key={1} type="Description" content={
                 <p className="project_spiel">
                     AntLogic is a complex logic gate puzzle game built to
-                    enhance students' understanding of boolean logic.
+                    enhance understanding of boolean logic.<br />
+                    Puzzles range from simple lessons on Demorgan's law to challenges
+                    testing true understanding of boolean functions.
 
-                    Example puzzles include simple puzzles that teach
-                    concepts like DeMorgan's law and functional completeness,
-                    to intricate puzzles that require more advanced knowledge
-                    of boolean functions.
-                    Collaborated on this project at IrvineHacks 2024 with <a href="https://github.com/YKawesome">Yousef Khan</a> and <a href="https://github.com/Podskio">Jackson Podgorski</a>.
+                    Developed at IrvineHacks 2024 with <a href="https://github.com/YKawesome">Yousef Khan</a> and <a href="https://github.com/Podskio">Jackson Podgorski</a> in 48 hours.
                 </p>
             }></Section>,
             <Video key={2} title="AntLogic (IrvineHacks 2024)" url="https://www.youtube.com/embed/cO8FiEcALbw"></Video>,
@@ -70,7 +69,7 @@ const AntLogic: React.FC = (_props: {}) => {
             <List key={2} type="Features"
                 list={["Leaderboard", "User authentication system", "Logic gate library", "Animated components"]}
             ></List>,
-            <List key={3} type="My Contributions"
+            <List key={3} type="My Contribution"
                 list={["Backend auth and leaderboard", "SVG component designs", "Circuit evaluation algorithm", "Puzzle prompts", "Page styling"]}
             ></List>,
             <Links key={4} github="https://github.com/benjamin-cates/ant_logic" try="https://ant-logic.thebenjicat.dev" other={[["View IrvineHacks 2024 Submission", "https://devpost.com/software/antlogic"]]}></Links>
@@ -85,12 +84,9 @@ const MatrixAssistant: React.FC = (_props: {}) => {
         left={[
             <Section key={1} type="Description" content={
                 <p className="project_spiel">
-                    During my time in Linear Algebra, I found it was easy to make mistakes while
-                    reducing matrices. I wanted to create a tool that would help others learn
-                    the algorithm for row reducing a matrix and help catch mistakes. The result is Matrix Assistant.
-                    It's a web app that assists you in solving a matrix with different
-                    difficulty levels. It was my first project built with TypeScript and React,
-                    so it was also a big learning experience.
+                    Inspired by my frustrations with minor arithmetic mistakes in linear algebra,
+                    I developed Matrix Assistant to guide the row reduction process with error correction.
+                    As my first foray using TypeScript and React, the development of Matrix Assistant taught me many of the technologies I use today.
                 </p>
             }></Section>,
             <List key={2} type="Features"
@@ -120,11 +116,9 @@ const InteractiveEM: React.FC = (_props: {}) => {
         left={[
             <Section key={1} type="Description" content={
                 <p className="project_spiel">
-                    Group project made at Friday Night Lab to simulate charges and conductors in the electric field. Wrote a
-                    document in LaTeX describing all of the math necessary, such as derivations of voltage formulae from
-                    integrating Coulomb's Law, Linear Algebra-based solution to create an efficient conductor simulation, and
-                    calculations of torque. Special thanks to Dr. Quinn MacPherson for helping with the theory.
-
+                    Developed at College of the Sequoias' <a href="https://fnlhub.com/">Friday Night Lab</a> with peers, Interactive EM solves complex equipotential diagrams and electric field vectors using a complete 2-dimensional simulation.<br />
+                    We wrote the math behind Interactive EM in a LaTeX document to show how to optimize simulation with pre-solved complex integrals of Coulomb's Law. Realistic simulation of conductors uses a linear algebra based solution to solve for induced charges.<br />
+                    Special thanks to Dr. Quinn MacPherson for helping with the theory.
                 </p>
             }></Section>,
             <List key={2} type="Features"
@@ -163,13 +157,9 @@ const AOC: React.FC = (_props: {}) => {
         left={[
             <Section key={1} type="Description" content={
                 <p className="project_spiel">
-                    Completed all 25 days of <a href="https://adventofcode.com/2023">Advent of Code 2023</a>
-                    in order to build skills in the Rust programming language and
-                    algorithmic thinking. All solutions are my own work and were done
-                    on the day the problem was released or the day after.
-                    Used my own library <a href="https://github.com/benjamin-cates/astro_nalgebra">astro_nalgebra</a>
-                    to solve day 24 using arbitrary precision arithmetic and linear algebra to narrow down an exact solution
-                    without floating point errors.
+                    Solved all 25 daily mathematical challenges of both <a href="https://adventofcode.com/2023">Advent of Code 2023</a> and <a href="https://adventofcode.com/2024">2024</a> with efficient algorithms written in the Rust programming language. <br />
+
+                    For day 24 of 2023, I wrote a Rust library to bind the arbitrary precision library <a href="https://docs.rs/astro-float/latest/astro_float/">astro_float</a> with the linear algebra library <a href="https://nalgebra.org/">nalgebra</a> by implementing the Float trait, solving the linear algebra problem with an exact solution beyond the precision of 64-bit floating point numbers.
                 </p>
             }></Section>,
             <List key={2} type="Algorithms used"
@@ -247,6 +237,68 @@ const BallBlitz: React.FC = (_props: {}) => {
     ></TwoColumn>
 };
 
+//const TubeTastic: React.FC = (_props: {}) => {
+//    return <TwoColumn
+//        title="TubeTasTic"
+//        id="tubetastic"
+//        left={[
+//            <Section key={1} type="Description" content={
+//                <p className="project_spiel">
+//                </p>
+//            }></Section>,
+//        ]}
+//        right={[
+//            <Links key={2} github="https://github.com/benjamin-cates/tubetastic"></Links>
+//        ]}
+//    ></TwoColumn>
+//};
+
+const SummerCampBrowser: React.FC = (_props: {}) => {
+    return <TwoColumn
+        title="Summer Camp Browser"
+        id="summer_camp_browser"
+        left={[
+            <Section key={1} type="Description" content={
+                <p className="project_spiel">
+                    Built to help my students discover and apply to high school summer camps, Summer Camp Browser shows all the requirements and descriptions in a unified interface.
+                </p>
+            }></Section>,
+            <List key={2} type="Features" list={[
+                "Short summary of all essay requirements",
+                "Unified interface of camp descriptions",
+                "Collapsible track descriptions",
+            ]}></List>
+        ]}
+        right={[
+            <Photo key={3} alt="Summer Camp Browser interface" src="/public/project/summer_camp_browser.png"></Photo>,
+            <Links key={4} github="https://github.com/benjamin-cates/summer_camp_browser/" try="https://benjamin-cates.github.io/summer_camp_browser/"></Links>
+        ]}
+    ></TwoColumn>
+};
+
+const ResumeExpress: React.FC = (_props: {}) => {
+    return <TwoColumn
+        title="ResumeExpress"
+        id="resume_express"
+        left={[
+            <Section key={1} type="Description" content={
+                <p className="project_spiel">
+                    Quick, dyanamic resume editor with export to JSON and LaTeX.
+                </p>
+            }></Section>,
+            <List key={2} type="Features" list={[
+                "Short summary of all essay requirements",
+                "Unified interface of camp descriptions",
+                "Collapsible track descriptions",
+            ]}></List>
+        ]}
+        right={[
+            <Photo key={3} alt="Resume express example image" src="/public/project/resume_express.png"></Photo>,
+            <Links key={4} github="https://github.com/benjamin-cates/resume_express" try="https://benjamin-cates.github.io/resume_express/"></Links>
+        ]}
+    ></TwoColumn>
+};
+
 const PyhaAnalyzer: React.FC = (_props: {}) => {
     return <TwoColumn
         title="Pyha Analyzer"
@@ -254,19 +306,16 @@ const PyhaAnalyzer: React.FC = (_props: {}) => {
         left={[
             <Section key={1} type="Description" content={
                 <p className="project_spiel">
-                    PyHa Analyzer is a bird call classification system that I helped develop at UC San Diego
-                    as a part of the Engineers for Exploration research cohort of Summer 2023.
-                    It uses multiple different convolutional neural networks on audio spectrograms to
-                    classify bird calls by species. Project is in collaboration with the San Diego Zoo
-                    Wildlife Alliance.
+                    PyHa Analyzer is a bird call classification system under the University of California San Diego Engineers for Exploration research cohort.
+                    In summer 2023, I worked at an NSF Research Experience for Undergraduates to accelerate development of PyHa analyzer. After 2 months of full-time research, our team of four presented our advancements to the San Diego Zoo Wildlife Alliance and the public.
                 </p>
             }></Section>,
-            <List key={2} type="Contributions"
+            <List key={2} type="My Contributions"
                 list={[
                     "Documented and set up three AWS EC2 instances to train ML models",
                     "Implemented pseudo-labeling to fix domain shift problem",
                     "Wrote CSV formatting code to standardize varying file formats",
-                    "Compare different techniques to chunk long audio data into short clips",
+                    "Compared different techniques to chunk long audio into uniform length clips",
                     "Developed testing procedures to compare different preprocessing techniques",
                     "Wrote utilty to visually compare augmentation techniques",
                 ]}
@@ -275,9 +324,9 @@ const PyhaAnalyzer: React.FC = (_props: {}) => {
         right={[
             <Video key={3} title="2023 E4E Summer Projects Webcast" url="https://www.youtube.com/embed/SlNWh68qTh0?start=4043"></Video>,
             <List key={4} type="Technologies Used"
-                list={["Python", "PyTorch", "Pands, Numpy, and Matplotlib", "Amazon Web Services", "Anaconda"]}
+                list={["Python", "PyTorch", "Pandas, Numpy, and Matplotlib", "Amazon Web Services", "Anaconda", "Weights and Biases"]}
             ></List>,
-            <Links key={5} github="https://github.com/UCSD-E4E/acoustic-multiclass-training" try="https://benjamin-cates.github.io/matrix_assistant" other={[["UCSD Engineers for Exploration", "https://e4e.ucsd.edu/news-and-updates/2023-summer-research-students"]]}></Links>
+            <Links key={5} github="https://github.com/UCSD-E4E/acoustic-multiclass-training" other={[["UCSD Engineers for Exploration", "https://e4e.ucsd.edu/news-and-updates/2023-summer-research-students"]]}></Links>
         ]}
     ></TwoColumn>
 };
@@ -289,13 +338,9 @@ const TopographicSandMap: React.FC = (_props: {}) => {
         left={[
             <Section key={1} type="Description" content={
                 <p className="project_spiel">
-                    The topographic sand map is a real-time interactive demonstration of topography lines.
-                    The table uses the Microsoft Kinect viewer to create a height map of the sand 30 times per
-                    second, which is then sent through processing filters that create a layered topographic map.
-                    I displayed it at the <b>Geomatics Engineering Conference</b> in Fresno.
-                    I started on the project when another team had been working on it for two years.
-                    The mechanism was ready but there was no code to run it.
-                    I adopted the project by myself and wrote a working Unity program within 5 months.
+                    After the previous team gave up on the project, I single-handedly developed the Topographic Sand Map at College of the Sequoias' <a href="https://fnlhub.com/">Friday Night Lab</a> to create a real-time interactive demonstration of topography lines. Using the Microsoft Kinect device, depth of each element on the table is calculated 30 times per second and processed through C# code and shaders to create a real time map.<br />
+
+                    I displayed this project at California State University, Fresno's Geomatics Engineering Conference to both professionals and undergraduate students.
                 </p>
             }></Section>,
             <List key={2} type="Technologies Used"
@@ -357,7 +402,6 @@ const XprtCalc: React.FC = (_props: {}) => {
                     "Lambda functions",
                     "Vectors",
                     "Variable and function declaration",
-                    "Features of Calculus",
                     "Syntax highlighting",
                     "100% Client-side",
                 ]}
@@ -393,6 +437,8 @@ const Project: React.FC = (_props: {}) => {
             {name == "interactive_em" && <InteractiveEM></InteractiveEM>}
             {name == "pyha_analyzer" && <PyhaAnalyzer></PyhaAnalyzer>}
             {name == "topographic_sand_map" && <TopographicSandMap></TopographicSandMap>}
+            {name == "summer_camp_browser" && <SummerCampBrowser></SummerCampBrowser>}
+            {name == "resume_express" && <ResumeExpress></ResumeExpress>}
             {name == "matrix_assistant" && <MatrixAssistant></MatrixAssistant>}
             {name == "xprt_calc" && <XprtCalc></XprtCalc>}
         </div>
