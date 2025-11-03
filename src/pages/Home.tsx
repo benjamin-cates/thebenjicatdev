@@ -41,6 +41,9 @@ const Home: React.FC = (_props: {}) => {
                 <div id="youtube">
                     <a href="https://www.youtube.com/channel/UCWGv2wRpcYeKC7-0XTRW5_A">{logos.youtube} YouTube</a>
                 </div>
+                <div id="itch">
+                    <a href="https://thebenjicat.itch.io">{logos.itch} itch.io</a>
+                </div>
             </div>
         </div>
         <div id="experience_wrapper">
