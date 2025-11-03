@@ -46,6 +46,14 @@ const Home: React.FC = (_props: {}) => {
         <div id="experience_wrapper">
             <div className="experience_column">
                 <HomeElement
+                    title="Picky Kitty"
+                    alt="Picky Kitty promotional logo"
+                    image="/images/picky_kitty.png"
+                    link="picky_kitty"
+                    try="https://thebenjicat.itch.io/picky-kitty"
+                    spiel="Toby lost his motivation to get out of bed. Developed in 72 hours for the Cozy Fall Jam 2025 on itch.io. Earned #6 in Creativity and #12 in Enjoyment out of 141 projects."
+                ></HomeElement>
+                <HomeElement
                     title="AntLogic"
                     alt="Anteater with logic gates background"
                     image="/images/ant_logic.webp"

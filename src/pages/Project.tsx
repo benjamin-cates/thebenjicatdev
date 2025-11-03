@@ -30,6 +30,39 @@ const TwoColumn: React.FC<TwoColumnProps> = (props: TwoColumnProps) => {
     </>;
 };
 
+const PickyKitty: React.FC = (_props: {}) => {
+    return <TwoColumn
+        title="Picky Kitty"
+        id="picky_kitty"
+        left={[
+            <Section key={1} type="Description" content={
+                <p className="project_spiel">
+                    The first cool morning of autumn has stripped Toby  of his motivation to get out of bed. Can you help him find it? But be careful—he's a PICKY KITTY!<br /><br />
+
+                    Picky Kitty is a short, grid-based puzzle game where the objective is to satisfy a demanding
+                    cat. <br /><br />
+
+                    Developed in 72 hours, Picky Kitty earned #6 in Creativity and #12 in Enjoyment out of 141 entries in the <a href="https://itch.io/jam/cozy-fall-jam-2025">Cozy Fall Jam 2025</a> on Itch.
+                </p>}></Section>,
+            <Photo key={2} src="/images/picky_kitty.png" alt="Picky Kitty promotional image"></Photo>,
+            <List key={3} type="Technologies Used" list={["KAPLAY", "TypeScript"]}></List>
+        ]}
+        right={[
+            <Carousel key={1}
+                src_list={[
+                    "/project/pickykitty001.png",
+                    "/project/pickykitty002.png",
+                    "/project/pickykitty003.png",
+                    "/project/pickykitty004.png",
+                ]}
+                name_list={["First level", "Toby's demands", "Kitchen", "Level 9"]}
+                alts_list={["", "", "", ""]}
+            ></Carousel>,
+            <Links key={2} try="https://thebenjicat.itch.io/picky-kitty" other={[["View Cozy Fall Jam 2025 Submission", "https://itch.io/jam/cozy-fall-jam-2025/rate/3985432"]]}></Links>
+        ]}
+    ></TwoColumn>
+};
+
 const AntLogic: React.FC = (_props: {}) => {
     return <TwoColumn
         title="Ant Logic"
@@ -439,6 +472,7 @@ const Project: React.FC = (_props: {}) => {
             {name == "topographic_sand_map" && <TopographicSandMap></TopographicSandMap>}
             {name == "summer_camp_browser" && <SummerCampBrowser></SummerCampBrowser>}
             {name == "resume_express" && <ResumeExpress></ResumeExpress>}
+            {name == "picky_kitty" && <PickyKitty></PickyKitty>}
             {name == "matrix_assistant" && <MatrixAssistant></MatrixAssistant>}
             {name == "xprt_calc" && <XprtCalc></XprtCalc>}
         </div>

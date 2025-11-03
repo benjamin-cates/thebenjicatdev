@@ -24,6 +24,7 @@ const Sitemap: React.FC = (_props: {}) => {
                     <li> <a href='/project/ball_blitz' style={STYLE.link}>/project/ball_blitz</a> </li>
                     <li> <a href='/project/interactive_em' style={STYLE.link}>/project/interactive_em</a> </li>
                     <li> <a href='/project/matrix_assistant' style={STYLE.link}>/project/matrix_assistant</a> </li>
+                    <li> <a href='/project/picky_kitty' style={STYLE.link}>/project/picky_kitty</a> </li>
                     <li> <a href='/project/pyha_analyzer' style={STYLE.link}>/project/pyha_analyzer</a> </li>
                     <li> <a href='/project/topographic_sand_map' style={STYLE.link}>/project/topographic_sand_map</a> </li>
                 </ul>
@@ -31,6 +32,7 @@ const Sitemap: React.FC = (_props: {}) => {
             <h1>Other Endpoints</h1>
             <ul>
                 <li><a href="https://ant-logic.thebenjicat.dev" style={{ ...STYLE.link, minWidth: "20em" }}>ant-logic.thebenjicat.dev</a><span className="desc">AntLogic</span></li>
+                <li><a href="https://catfactory.thebenjicat.dev" style={{ ...STYLE.link, minWidth: "20em" }}>catfactory.thebenjicat.dev</a><span className="desc">Cat Factory</span></li>
             </ul>
 
         </div>
