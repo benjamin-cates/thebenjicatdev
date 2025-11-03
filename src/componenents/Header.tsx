@@ -7,7 +7,7 @@ const Header: React.FC = (_props: {}) => {
             <span>
                 <span id="name">Benjamin Cates</span>
                 <span id="pronouns">he/him</span>
-                <span id="location">Pomona, CA</span>
+                <span id="location">Anaheim, CA</span>
             </span>
         </div>
         <div>
