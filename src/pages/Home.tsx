@@ -9,7 +9,7 @@ interface ProjectProps {
     image: string,
     alt: string,
     spiel: string,
-    link: string,
+    link?: string,
     try?: string,
 }
 
@@ -18,7 +18,7 @@ const HomeElement: React.FC<ProjectProps> = (props: ProjectProps) => {
         <div className="experience_title"><span>{props.title}</span>{props.try && <a className="try_button" href={props.try}>{"Try"}</a>}</div>
         <div className="experience_image"><img src={props.image} alt={props.alt} /></div>
         <div className="experience_spiel">{props.spiel}</div>
-        <div className="experience_see_more"><a href={"project/" + props.link}>See more...</a></div>
+        {props.link && <div className="experience_see_more"><a href={"project/" + props.link}>See more...</a></div>}
     </div>
 
 }
@@ -96,6 +96,13 @@ const Home: React.FC = (_props: {}) => {
                     link="interactive_em"
                     try="https://benjamin-cates.github.io/Interactive-EM"
                     spiel="Developed at Friday Night Lab with peers, Interactive EM solves complex equipotential diagrams and electric field vectors using a complete 2-dimensional simulation."
+                ></HomeElement>
+                <HomeElement
+                    title="Rogue Snacks"
+                    alt="Rogue Snacks promotional logo"
+                    image="/images/roguesnacks.png"
+                    try="https://thebenjicat.itch.io/rogue-snacks"
+                    spiel="Fight endless waves of corrupted ballgame food. Developed in 72 hours for the ScoreSpace Jam #35 on itch.io."
                 ></HomeElement>
                 <HomeElement
                     title="Matrix Assistant"

@@ -66,19 +66,20 @@
 }
 .experience_image > img { 
     width: 100%;
-        box-shadow: none;
-        border-radius: 0;
-    
-    }
-    
-    .experience_spiel {
-        padding: 1rem;
-        padding-bottom: 0rem;
-    }
-    
-    .experience_see_more {
-        padding: 1rem;
+    box-shadow: none;
+    border-radius: 0;
 }
+
+.experience_spiel {
+    padding: 1rem;
+}
+
+.experience_see_more {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
 #title_cursor {
     animation: blinker 1s ease-in-out infinite;
     display:inline-block;
