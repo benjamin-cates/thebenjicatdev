@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router";
 
 const Header: React.FC = (_props: {}) => {
-    let is_crafts = window.location.href.includes("crafts");
     return <header>
         <div id="header_name">
             <img id="pfp" src="/images/pfp.jpg" alt="Profile picture" />
