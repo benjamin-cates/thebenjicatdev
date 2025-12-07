@@ -1,43 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@500&family=Inclusive+Sans&family=Lato&family=Lexend&family=Roboto+Mono&family=Share+Tech+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@500&family=Inclusive+Sans&family=Lato&family=Lexend&family=Roboto+Mono&family=Share+Tech+Mono&display=swap");
 /* Header stuff */
 header {
-    box-shadow: 0px 1px 5px 2px #00000088;
-    padding: 1em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background: #2e2e2e;
+  box-shadow: 0px 1px 5px 2px #00000088;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #2e2e2e;
 }
-#header_name { display: flex; align-items: center; }
-#pfp {border-radius: 100%; width: 3rem; height: 3rem; margin-right: 1em}
-#pronouns {color: #A1A1A1; font-size: 0.75em;}
-#location {color: #A1A1A1; font-size: 0.75em;margin-left: 0.6em}
-#name {font-size: 1.5em;display: block;}
+#header_name {
+  display: flex;
+  align-items: center;
+}
+#pfp {
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1em;
+}
+#pronouns {
+  color: #a1a1a1;
+  font-size: 0.75em;
+}
+#location {
+  color: #a1a1a1;
+  font-size: 0.75em;
+  margin-left: 0.6em;
+}
+#name {
+  font-size: 1.5em;
+  display: block;
+}
 
+.switcher {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.switcher > a:visited {
+  color: white;
+}
+.switcher > a.active {
+  background: #2e3a51;
+}
+.switcher > a.active:hover {
+  background: #3e4a61;
+}
+.switcher > a {
+  font-size: 1.5em;
+  display: block;
+  background: #111;
+  border-radius: 0.5rem;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: all 0.3s;
+}
+.switcher > a:hover {
+  color: white;
+  background: #222;
+}
 
 body {
-    margin: 0px;
-    background: #222222;
-    color: white; 
-    font-family: "Lexend", "sans-serif";
-    overflow-x: hidden;
+  margin: 0px;
+  background: #222222;
+  color: white;
+  font-family: "Lexend", "sans-serif";
+  overflow-x: hidden;
 }
 div.page {
-    margin-left: 20vw;
-    margin-right: 20vw;
-    margin-top: 3rem;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  margin-top: 3rem;
 }
 @media only screen and (max-width: 720px) {
-    div.page {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-top: 3rem;
-    }
+  div.page {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+  }
 }
-a, a:visited {
-    color: #0AA7DB;
+a,
+a:visited {
+  color: #0aa7db;
 }
-a:hover { 
-    color: #0AC0F0;
+a:hover {
+  color: #0ac0f0;
 }

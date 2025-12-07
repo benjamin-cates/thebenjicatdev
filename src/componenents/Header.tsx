@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Header: React.FC = (_props: {}) => {
+    let is_crafts = window.location.href.includes("crafts");
     return <header>
         <div id="header_name">
             <img id="pfp" src="/images/pfp.jpg" alt="Profile picture" />
@@ -10,8 +12,9 @@ const Header: React.FC = (_props: {}) => {
                 <span id="location">Anaheim, CA</span>
             </span>
         </div>
-        <div>
-            <a href="/sitemap">/sitemap</a>
+        <div className="switcher">
+            <Link to="/crafts">🧶 Crafts</Link>
+            <Link to="/">🧑‍💻 Code</Link>
         </div>
     </header>;
 }

@@ -3,6 +3,7 @@ import React from "react";
 import { logos } from "../componenents/Logos";
 import { ThebenjicatAnimation } from "../componenents/ThebenjicatAnimation";
 import { Header } from "../componenents/Header";
+import { Link } from "react-router";
 
 interface ProjectProps {
     title: string,
@@ -18,7 +19,7 @@ const HomeElement: React.FC<ProjectProps> = (props: ProjectProps) => {
         <div className="experience_title"><span>{props.title}</span>{props.try && <a className="try_button" href={props.try}>{"Try"}</a>}</div>
         <div className="experience_image"><img src={props.image} alt={props.alt} /></div>
         <div className="experience_spiel">{props.spiel}</div>
-        {props.link && <div className="experience_see_more"><a href={"project/" + props.link}>See more...</a></div>}
+        {props.link && <div className="experience_see_more"><Link to={"project/" + props.link}>See more...</Link></div>}
     </div>
 
 }
