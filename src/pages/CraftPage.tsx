@@ -22,6 +22,7 @@ const CraftPage: React.FC = () => {
     }
     return <>
         <title>{craft.name}</title>
+        <meta name="description" content={craft.page_description}></meta>
         <Header></Header>
         <div className="craft_page">
             <h1>{craft.name}</h1>

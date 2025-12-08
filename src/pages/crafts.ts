@@ -4,6 +4,7 @@ interface Craft {
     description: string,
     spiel: string,
     publish_date: string,
+    page_description: string,
     feature_images: string[],
     files: { name: string, drive: string, filetype: string, desc?: string }[],
 }
@@ -33,6 +34,7 @@ const crafts_list: { [key: string]: Craft } = {
         name: "Ferris Papercraft",
         feature_images: ["/crafts/ferris_instagram.jpg", "/crafts/ferris_complete.jpg"],
         spiel: `This papercraft is inspired by Ferris the Crab, the official mascot of the [Rust programming language](https://rust-lang.org/), but he's also a cute little crab perfect for any beach!`,
+        page_description: "Free papercraft pattern for Ferris the Crab inspired by the Rust Programming Language mascot",
         description: papercraft_choosing_a_file + `
 
 # Pattern instructions
