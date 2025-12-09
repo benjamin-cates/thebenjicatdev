@@ -48,7 +48,7 @@ const CraftPage: React.FC = () => {
                     </div>;
                 })}
             </div>
-            <ReactMarkdown>{craft.description}</ReactMarkdown>
+            <ReactMarkdown>{craft.body}</ReactMarkdown>
 
         </div>
     </>;

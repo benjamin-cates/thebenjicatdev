@@ -1,7 +1,7 @@
 
 interface Craft {
     name: string,
-    description: string,
+    body: string,
     spiel: string,
     publish_date: string,
     page_description: string,
@@ -26,18 +26,26 @@ const copyright_statement = (publish_date: string): string => {
 let papercraft_modification_statement = `
 # Modification
 
-These files were made with [Blender](https://blender.org) and [Pepakura Designer](https://pepakura.tamasoft.co.jp). Feel free to download and modify the source files, but distribution must be done under the license.\n
+These files were made with [Blender](https://blender.org) and [Pepakura Designer](https://pepakura.tamasoft.co.jp). Feel free to download and modify the source files in the Google Drive folder link provided, but distribution must be done under the license.\n
 `
 
 const crafts_list: { [key: string]: Craft } = {
     "ferris-papercraft": {
         name: "Ferris Papercraft",
-        feature_images: ["/crafts/ferris_instagram.jpg", "/crafts/ferris_complete.jpg"],
+        feature_images: ["/crafts/ferris_instagram.webp", "/crafts/ferris_complete.jpg"],
         spiel: `This papercraft is inspired by Ferris the Crab, the official mascot of the [Rust programming language](https://rust-lang.org/), but he's also a cute little crab perfect for any beach!`,
         page_description: "Free papercraft pattern for Ferris the Crab inspired by the Rust Programming Language mascot",
-        description: papercraft_choosing_a_file + `
+        body: papercraft_choosing_a_file + `
 
 # Pattern instructions
+
+Timing: approximately 2 hours
+
+Dimensions: 5.5 x 3 x 2.5 inch
+
+Pages: 2
+
+Materials: Printer paper, glue, glue applicator / toothpick, scissors / box cutter
 
 This pattern consists of 7 individual pieces: 1 body, two claws, and four legs.
 
@@ -108,21 +116,6 @@ Finally, glue the platform of each appendage that attaches to the body. The fina
                 drive: "https://drive.google.com/file/d/17zc2aMDfn3xbkw19fFBfxBLed46ZTeGr/view?usp=drive_link",
             },
             {
-                name: "3D Model",
-                filetype: "obj",
-                drive: "https://drive.google.com/file/d/1qSXG7wSEM6xN2abhwLg_QT5O56GVk10u/view?usp=drive_link"
-            },
-            {
-                name: "Blender Model",
-                filetype: "blend",
-                drive: "https://drive.google.com/file/d/1KL7GGShQNAodFFLqiX8TJrO9bvp3Cebs/view?usp=drive_link",
-            },
-            {
-                name: "Pepakura Designer File",
-                filetype: "pdo",
-                drive: "https://drive.google.com/file/d/1UPtC7kf38MQ3PvbLDgNKvkVEwppvXBsJ/view?usp=drive_link",
-            },
-            {
                 name: "Google Drive Folder",
                 filetype: "folder",
                 drive: "https://drive.google.com/drive/folders/17skFW0W7yH-rhLOaAn-5YC0JD_WniXhV?usp=sharing",
@@ -130,15 +123,97 @@ Finally, glue the platform of each appendage that attaches to the body. The fina
         ]
 
     },
-    //"hornet-papercraft": {
-    //    name: "Hornet Papercraft",
-    //    description: "",
-    //    spiel: "",
-    //    feature_images: [""],
-    //    files: [],
-    //    publish_date: "2025-12-05",
+    "hornet-papercraft": {
+        name: "Hornet Papercraft",
+        page_description: "Free papercraft pattern for Hornet from Hollow Knight: Silksong",
+        body: papercraft_choosing_a_file + `
+        
+# Pattern Instructions
 
-    //},
+Timing: approximately 90 minutes
+
+Dimensions: 3.5 x 3.5 x 4.5 inch
+
+Pages: 2
+
+Materials: Printer paper, glue, glue applicator / toothpick, scissors / box cutter
+
+This pattern consists of five parts: the cloak, the head, the body, the base, and the needle.
+
+## Cloak
+
+Cut out the four pieces of the cloak from the pattern. Only cut out solid black lines. Prefold each of the folds before glueing together. Lines with dashes are mountain lines (convex like the top of her cloak), and lines with dashes and dots are valley lines (concave like the bottom fold of her cloak). Glue the half necks to the main parts of each half cloak. Then, glue the two halves together with the four tabs. It should look like the picture below.
+
+![Two halves of Hornet's cloak before glueing](/crafts/hornet_cloak_halves.webp)
+
+## Base
+Cut out each part of the base and prefold. Glue the center piece to the top so it looks like the image below. Then glue the bottom on starting at the center and then glue the outside tabs one-at-a-time.
+
+![Base to hold hornet standing up](/crafts/hornet_base.webp)
+
+## Head
+Cut out the two top parts of the head, prefold, and glue together. Then, cut out the bottom piece of the head and glue the horns together first. The tab to hold each horn together is too long, so cut it short like the image below.
+
+![Diagram showing how to cut the tab for her horns short](/crafts/hornet_extra_cut.png)
+
+Now, start by glueing the top tabs like a zipper.
+
+![Partially completed hornets head](/crafts/hornet_head_partial.webp)
+
+## Body
+
+Cut and prefold the body piece and inner legs. Glue the inner legs one at a time to prevent it from slipping in the wrong direction. Now, the body should look like this picture.
+
+![Hornet body partially complete](/crafts/hornet_body_partial.webp)
+
+Glue sections of the final flap one at a time. I recommend starting with the legs, then the arm flap, then the head.
+
+## Needle
+
+Cut out the needle and glue each half together so the texture is on the outside. If you are using the double sided pattern, I recommend cutting on the side with texture in case the printer is misaligned.
+
+## Assembly
+
+![Hornet pieces](/crafts/hornet_pieces.webp)
+![Hornet pieces being assembled](/crafts/hornet_assembly.webp)
+
+Insert Hornet's body into the base and put her cloak around the neck. Put a dab of glue on the top of the neck and stick the head on. Glue the needle to the underside of the cloak so it sticks out (you can place it wherever you like). Congrats, your Hornet Papercraft is now done!
+
+![Hornet completed](/crafts/hornet_complete.webp)
+
+`+ papercraft_modification_statement + copyright_statement("2025-12-09"),
+        spiel: "This nimble bug from Hollow Knight: Silksong is the perfect addition to a figurine collection. Her sharp needle and drifting cloak will let her take on any enemy. Follow this free papercraft pattern tutorial to make one of your own.",
+        feature_images: ["/crafts/hornet_post.webp", "/crafts/hornet_complete.webp"],
+        files: [
+            {
+                name: "Letter-size Two-sided Print",
+                filetype: "pdf",
+                drive: "https://drive.google.com/file/d/1OoQpWFmoiyH8Q4LUhSbsy8OIiZKd0XQW/view?usp=drive_link",
+            },
+            {
+                name: "Letter-size One-sided Print",
+                filetype: "pdf",
+                drive: "https://drive.google.com/file/d/10-m2Ez7sLR9XQv-wYqZD9_xq6VN-heDx/view?usp=drive_link",
+            },
+            {
+                name: "A4-size Two-sided Print",
+                filetype: "pdf",
+                drive: "https://drive.google.com/file/d/1LdsmqHgMaguJy-7DAMvWGquGTSyflZ36/view?usp=drive_link",
+            },
+            {
+                name: "A4-size One-sided Print",
+                filetype: "pdf",
+                drive: "https://drive.google.com/file/d/11lEX439yW2aLIlIDYwtLWOHBTCOd7piX/view?usp=drive_link",
+            },
+            {
+                name: "Google Drive Folder",
+                filetype: "folder",
+                drive: "https://drive.google.com/drive/folders/1lcwKcsKN4auE5vUBgV9j047qKfRMUVpL?usp=sharing",
+            }
+        ],
+        publish_date: "2025-12-09",
+
+    },
 
 };
 

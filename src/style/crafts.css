@@ -13,7 +13,7 @@
 .craft_page_card {
   width: calc(min(20rem, 40vw));
   color: white;
-  background: #2e3a51;
+  /*background: #2e3a51;*/
   border-radius: 1rem;
   transition: transform 0.2s;
 }
