@@ -29,6 +29,31 @@ let papercraft_modification_statement = `
 These files were made with [Blender](https://blender.org) and [Pepakura Designer](https://pepakura.tamasoft.co.jp). Feel free to download and modify the source files in the Google Drive folder link provided, but distribution must be done under the license.\n
 `
 
+let papercraft_instructions_generic = `
+# Instructions
+
+Materials
+* Cardstock paper or regular paper
+* Scissors (slower) or a craft knife with a cutting mat (faster)
+* Aleene's Tacky Glue or Elmer's Glue
+* Toothpick for applying glue (optional)
+* Ruler for creasing (optional)
+
+Steps
+
+1. Cut each piece on the solid lines.
+
+2. Crease each part on their interior lines. **Dashed lines** are convex mountain folds. **Dashed lines with dots** are concave valley folds. I recommend creasing by folding against a sharp ruler to get the straightest lines.
+
+3. Apply glue to the tabs and stick them inside the edge with a matching number. Using the right amount of glue is necessary to make a strong connection in just a few seconds, and I've found toothpicks work the best.
+
+4. Follow the specific instructions below for this pattern, which tell you the optimal order to cut the pieces and glue tabs.
+
+5. Enjoy your papercrafting!
+
+If you would like visual instructions [this video](https://www.youtube.com/watch?v=1ZiFKaXUcZo) from ThePapercraftsman gives a quick, but thorough overview.
+`;
+
 const crafts_list: { [key: string]: Craft } = {
     "ferris-papercraft": {
         name: "Ferris Papercraft",
@@ -37,53 +62,53 @@ const crafts_list: { [key: string]: Craft } = {
         page_description: "Free papercraft pattern for Ferris the Crab inspired by the Rust Programming Language mascot",
         body: papercraft_choosing_a_file + `
 
-# Pattern instructions
+# Quick Info
 
-Timing: approximately 2 hours
+**Time estimate**: 2 hours
 
-Dimensions: 5.5 x 3 x 2.5 inch
+**Dimensions (inches)**: **5.5** wide x **3** deep x **2.5** tall
 
-Pages: 2
+**Pages**: 2
 
-Materials: Printer paper, glue, glue applicator / toothpick, scissors / box cutter
+**Pieces**: 17
 
-This pattern consists of 7 individual pieces: 1 body, two claws, and four legs.
+` + papercraft_instructions_generic + `
 
 ## Body
 
-First, start out by cutting the spikes (parts 1 and 2) out of the pattern. Cut only the solid black lines. I recommend using an exacto knife or a box cutter. Then, prepare the folds by pressing them against a ruler or sharp straight edge. Dashed lines are mountain folds (like the edges of a cube) and dashed lines with dots are valley folds (like the crevices between Ferris' spikes). The direction of the folds depends on whether you have the two-sided or one-sided pattern.
-
-Attach the front and back half of the spikes like they are a zipper. I recommend using elmer's glue and using a toothpick to spread it onto the tabs. See the image below as a reference for this step.
+Cut and crease the spikes (parts 1 and 2) and glue together like a zipper.
 
 ![Front half and back half of spikes are attached in zipper order](/crafts/ferris_spikes.jpg)
 
-Now, cut out pieces 3 and 4. Attach the front half first. The object may curve in the wrong direction, as pictured below, but don't worry because it will correct itself when you attach the back half.
+Cut and crease pieces 3 and 4. Attach the front piece 3 first. The object may curve in the wrong direction, as pictured below, but don't worry because it will correct itself when you attach the back half.
 
 ![Front half attached to spikes](/crafts/ferris_front_half.jpg)
 
-Now, attach piece 4 to finish the back half. Glue every tab that doesn't face the bottom side.
+Now, attach piece 4 to finish the back half.
 
 ![Ferris body without bottom](/crafts/ferris_no_bottom.jpg)
 
-Finally, glue the bottom tabs one at a time to attach the bottom. It is tricky to line up the bottom symmetrically, so be careful.
+Finally, glue the bottom tabs one at a time to attach the bottom (piece 5). Be sure to line up the bottom symetrically because it is easy to misalign.
 
 ## Claws
 
-To make the claws, you'll have to cut 6-9 for the right claw and 12-15 for the left claw. On the two-sided version, the claw sides will be reversed, but it shouldn't be confusing. Start by cutting out and prefolding the knuckles and fingers. Glue each to themselves and then glue them to each other. The thicker side of the knuckles should be facing the tip of the fingers. Use the numbered tabs if you get lost.
+Cut out and crease the right knuckles (piece 6) and the fingers (piece 7). The thicker side of the knuckles should be facing the tip of the fingers. Use the numbered tabs if you get lost.
 
 ![Ferris fingers and knuckles](/crafts/ferris_knuckles.jpg)
 
-Then attach the thumb, making sure the glue holds strong (this is the easiest part to come undone).
+Then attach the thumb (piece 8), making sure the glue holds strong (this is the easiest part to come undone).
 
 ![Ferris thumb](/crafts/ferris_thumbs.jpg)
 
-Finally, attach the forearm piece before you glue the forearm to itself. If you attach the forearm to the thumb before anything else, it will be much easier.
+Attach the forearm (piece 9) to the thumb before glueing any other tabs.
 
 ![Claw finished](/crafts/ferris_claw.jpg)
 
+Glue the rest of the tabs closed and repeat this section for the left claw (pieces 12 through 15).
+
 ## Legs
 
-Each leg is a separate piece. Cut them out, prefold, and glue them to themselves.
+Each leg is a separate piece (10, 11, 16, and 17). Cut, crease, and glue! The front legs are thinner and longer; the back legs are thicker and shorter.
 
 ![Appendages done](/crafts/ferris_appendages.jpg)
 
@@ -93,7 +118,7 @@ Finally, glue the platform of each appendage that attaches to the body. The fina
 
 ![Ferris complete](/crafts/ferris_complete.jpg)
 `+ papercraft_modification_statement + copyright_statement("2025-12-06"),
-        publish_date: "2025-12-1",
+        publish_date: "2025-12-06",
         files: [
             {
                 name: "Letter-size Two-sided Print",
@@ -128,41 +153,41 @@ Finally, glue the platform of each appendage that attaches to the body. The fina
         page_description: "Free papercraft pattern for Hornet from Hollow Knight: Silksong",
         body: papercraft_choosing_a_file + `
         
-# Pattern Instructions
+# Quick Info
 
-Timing: approximately 90 minutes
+**Time estimate**: 90 minutes
 
-Dimensions: 3.5 x 3.5 x 4.5 inch
+**Dimensions (inches)**: **3.5** width x **3.5** length x **4.5** height
 
-Pages: 2
+**Pages**: 2
 
-Materials: Printer paper, glue, glue applicator / toothpick, scissors / box cutter
+**Pieces**: 13
 
-This pattern consists of five parts: the cloak, the head, the body, the base, and the needle.
+` + papercraft_instructions_generic + `
 
 ## Cloak
 
-Cut out the four pieces of the cloak from the pattern. Only cut out solid black lines. Prefold each of the folds before glueing together. Lines with dashes are mountain lines (convex like the top of her cloak), and lines with dashes and dots are valley lines (concave like the bottom fold of her cloak). Glue the half necks to the main parts of each half cloak. Then, glue the two halves together with the four tabs. It should look like the picture below.
+Cut and crease the cloak (1 through 4), then glue the top halves to the bottom halves (matching does not matter).
 
 ![Two halves of Hornet's cloak before glueing](/crafts/hornet_cloak_halves.webp)
 
+Glue the left half and the right half of the cloak to each other.
+
 ## Base
-Cut out each part of the base and prefold. Glue the center piece to the top so it looks like the image below. Then glue the bottom on starting at the center and then glue the outside tabs one-at-a-time.
+Cut and crease pieces 5 and 6. Glue piece 6 to the center column of piece 5 like the picture below. Then glue piece 7 to pieces 5 and 6 starting with the center tabs and then the outside tabs one-at-a-time.
 
 ![Base to hold hornet standing up](/crafts/hornet_base.webp)
 
 ## Head
-Cut out the two top parts of the head, prefold, and glue together. Then, cut out the bottom piece of the head and glue the horns together first. The tab to hold each horn together is too long, so cut it short like the image below.
+Cut and crease the upper head (pieces 8 and 9), and glue to each other. Cut and crease the bottom of the mask (piece 10). The tabs on each horn are too long, so cut both of them shorter like the image below. Glue the horns shut, then glue the bottom to the top in a zipper order.
 
 ![Diagram showing how to cut the tab for her horns short](/crafts/hornet_extra_cut.png)
-
-Now, start by glueing the top tabs like a zipper.
 
 ![Partially completed hornets head](/crafts/hornet_head_partial.webp)
 
 ## Body
 
-Cut and prefold the body piece and inner legs. Glue the inner legs one at a time to prevent it from slipping in the wrong direction. Now, the body should look like this picture.
+Cut and crease the body piece (12) and inner legs (11). Glue the inner legs one at a time to prevent it from slipping in the wrong direction.
 
 ![Hornet body partially complete](/crafts/hornet_body_partial.webp)
 
@@ -170,7 +195,7 @@ Glue sections of the final flap one at a time. I recommend starting with the leg
 
 ## Needle
 
-Cut out the needle and glue each half together so the texture is on the outside. If you are using the double sided pattern, I recommend cutting on the side with texture in case the printer is misaligned.
+Cut out the needle (piece 13) and glue each half together so the texture is on the outside. If you are using the double sided pattern, I recommend cutting on the side with texture in case the printer is misaligned.
 
 ## Assembly
 
@@ -182,7 +207,7 @@ Insert Hornet's body into the base and put her cloak around the neck. Put a dab 
 ![Hornet completed](/crafts/hornet_complete.webp)
 
 `+ papercraft_modification_statement + copyright_statement("2025-12-09"),
-        spiel: "This nimble bug from Hollow Knight: Silksong is the perfect addition to a figurine collection. Her sharp needle and drifting cloak will let her take on any enemy. Follow this free papercraft pattern tutorial to make one of your own.",
+        spiel: "This nimble bug from Hollow Knight: Silksong is the perfect addition to a figurine collection. Her sharp needle and drifting cloak will let her take on any enemy. Follow this free papercraft pattern to make one of your own.",
         feature_images: ["/crafts/hornet_post.webp", "/crafts/hornet_complete.webp"],
         files: [
             {
