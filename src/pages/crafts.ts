@@ -237,8 +237,89 @@ Insert Hornet's body into the base and put her cloak around the neck. Put a dab 
             }
         ],
         publish_date: "2025-12-09",
-
     },
+    "anteater-papercraft": {
+        name: "Anteater Papercraft",
+        page_description: "Free UC Irvine Anteater papercraft pattern",
+        body: papercraft_choosing_a_file + `
+        
+# Quick Info
+
+**Time estimate**: 90 minutes
+
+**Dimensions (inches)**: **5.5** length x **2** width x **3.5** height
+
+**Pages**: 2
+
+**Pieces**: 10
+
+` + papercraft_instructions_generic + `
+
+## Body
+
+Cut and crease the body pieces (1 through 4). Glue the pieces together in order.
+
+## Legs
+
+Cut and crease the leg pieces (5 through 8). Each leg should follow a similar tab glueing order. Follow the pictures below
+
+![Anteater leg partial](/crafts/zot_leg_open.jpg)
+
+![Anteater leg mostly done](/crafts/zot_leg_last.jpg)
+
+## Ears
+
+Cut and crease the ear pieces (9 and 10). Glue in the order suggested by the picture.
+
+![Anteater ear partially glued](/crafts/zot_ear.jpg)
+
+## Assembly
+
+You should now have all 7 pieces ready to glue together. Glue both of the ears onto the top of the head (follow the completed post).
+
+![Anteater pieces](/crafts/zot_pieces.jpg)
+
+The leg alignment is tricky, so follow the picture to get the legs in the right places.
+
+![Anteater leg alignmnet](/crafts/zot_legs_alignment.jpg)
+
+Your anteater papercraft is now complete!
+
+![Anteater completed](/crafts/zot_complete.jpg)
+
+`+ papercraft_modification_statement + copyright_statement("2025-12-28"),
+        spiel: "This cute little anteater is the official mascot of UC Irvine, but now in papercraft form! His long, gold nose make the perfect, provocative desktop creature. This free papercraft pattern is for printing and assembling him.",
+        feature_images: ["/crafts/zot_post.webp", "/crafts/zot_complete.jpg"],
+        files: [
+            {
+                name: "Letter-size Two-sided Print",
+                filetype: "pdf",
+                drive: "https://drive.google.com/file/d/1ZHYGVcEUh--E4BnJyExliVt5qddI7Z1n/view?usp=drive_link",
+            },
+            {
+                name: "Letter-size One-sided Print",
+                filetype: "pdf",
+                drive: "https://drive.google.com/file/d/1SmqV6xc-y3XgckiN4naXOzr70kNaKrLZ/view?usp=drive_link",
+            },
+            {
+                name: "A4-size Two-sided Print",
+                filetype: "pdf",
+                drive: "https://drive.google.com/file/d/1J0kb4xw6MjoZSVqcwjUWQQPNOeoMn9Nx/view?usp=drive_link",
+            },
+            {
+                name: "A4-size One-sided Print",
+                filetype: "pdf",
+                drive: "https://drive.google.com/file/d/1mDT8SsjXcBwyvSMCuCHANLcPWBBr_YKG/view?usp=drive_link",
+            },
+            {
+                name: "Google Drive Folder",
+                filetype: "folder",
+                drive: "https://drive.google.com/drive/folders/1bAsksER9ZkpIeIt76xN_znwBtd8GhGdf?usp=sharing",
+            }
+        ],
+        publish_date: "2025-12-28",
+
+    }
 
 };
 

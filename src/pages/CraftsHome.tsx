@@ -10,7 +10,7 @@ const CraftsHome: React.FC<{}> = (_props: {}) => {
     for (let key in crafts_list) {
         list.push({ link: key, ...crafts_list[key] });
     }
-    list.sort((a, b) => a.publish_date < b.publish_date ? -1 : 1);
+    list.sort((a, b) => a.publish_date < b.publish_date ? 1 : -1);
     return <>
         <Header></Header>
         <div className="craft_page_list">
