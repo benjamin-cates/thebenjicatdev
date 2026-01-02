@@ -288,7 +288,7 @@ Your anteater papercraft is now complete!
 ![Anteater completed](/crafts/zot_complete.jpg)
 
 `+ papercraft_modification_statement + copyright_statement("2025-12-28"),
-        spiel: "This cute little anteater is the official mascot of UC Irvine, but now in papercraft form! His long, gold nose make the perfect, provocative desktop creature. This free papercraft pattern is for printing and assembling him.",
+        spiel: "This cute little anteater is the official mascot of UC Irvine, but now in papercraft form! His long, gold nose make the perfect, provocative desktop creature. This free papercraft pattern is for printing and assembling him. If you're a fan of fiber arts, check out my free [Crochet Anteater Papercraft Pattern](/crafts/anteater-crochet).",
         feature_images: ["/crafts/zot_post.webp", "/crafts/zot_complete.jpg"],
         files: [
             {
@@ -319,6 +319,207 @@ Your anteater papercraft is now complete!
         ],
         publish_date: "2025-12-28",
 
+    },
+
+    "anteater-crochet": {
+        name: "Anteater Crochet",
+        page_description: "Free crochet pattern for the UCI anteater mascot",
+        body: `
+# Quick Info
+
+**Time estimate**: 3 hours
+
+**Dimensions (inches) with size 6 yarn**: **13** length x **4** width x **7** height
+
+Pieces: 1 body, 4 legs, 2 ears, 2 eyes, 1 text
+
+Materials: 
+* gold/yellow yarn
+* blue/cyan yarn (in matching thickness to gold yarn)
+* Black and white yarn OR black and white felt
+
+# Pattern
+
+## Abbreviations
+sc - Single Crochet
+
+hdc - Half Double Crochet
+
+inc - Increase
+
+dec - Decrease
+
+ch - Chain
+
+Every piece in this pattern works in spiral shaped rounds. This pattern uses U.S. terminology.
+
+## Head
+Start in gold/yellow. Work in spiral shaped rounds
+
+Round 1: Ch 2. Make 4 sc in first chain space (4)
+
+Round 2: (sc, inc) x 2 (6)
+
+Round 3: 6 sc
+
+Round 4: (2 sc, inc) x 2 (8)
+
+Round 5: (3 sc, inc) x 2 (10)
+
+Round 6: 10 sc
+
+Round 7: (4 sc, inc) x 2 (12)
+
+Round 8: 12 sc
+
+Round 9: (5 sc, inc) x 2 (14)
+
+Round 10: 14 sc
+
+Round 11: 14 sc
+
+Round 12: (6 sc, inc) x 2 (16)
+
+Round 13: 16 sc
+
+Finish off. Stuff partially.
+
+## Body
+Change to blue yarn. Continue working in the head. The start of the round will be the bottom of the body. 
+
+Round 1: inc, 4 sc, 2 hdc, 2 hdc inc, 2 hdc, 4 sc, inc (20)
+
+Round 2: 7 sc, 2 hdc, 2 hdc inc, 2 hdc, 7 sc (22)
+
+Round 3: 7 sc, 3 hdc, 2 hdc inc, 3 hdc, 7 sc (24)
+
+Round 4: 8 sc, 3 hdc, 2 hdc inc, 3 hdc, 8 sc (26)
+
+Round 5: 9 sc, 3 hdc, 2 hdc inc, 3 hdc, 9 sc (28)
+
+Round 6: 10 sc, 3 hdc, 2 hdc inc, 3 hdc, 10 sc (30)
+
+Round 7: 11 sc, 3 hdc, 2 hdc inc, 3 hdc, 11 sc (32)
+
+Round 8-10: 11 sc, 10 hdc, 11 sc (32, 3 rounds)
+
+Round 11: 11 sc, dec, 6 hdc, dec, 11 sc (30)
+
+Round 12: 10 sc, (dec, sc) x 2, (sc, dec) x 2, 10 sc (26)
+
+Round 13: 7 sc, dec, 8 sc, dec, 7 sc (24)
+
+Round 14: 6 sc, (dec, sc) x 2, (sc, dec) x 2, 6 sc (20)
+
+Round 15: 4 sc, (dec, sc) x 2, (sc, dec) x 2, 4 sc (16)
+
+Finish off. Stuff partially.
+
+
+## Tail
+Start in gold/yellow at the bottom back of the body.
+
+Round 1: dec, 4 sc, 2 hdc, 2 hdc inc, 2 hdc, 6 sc (18)
+
+Round 2: 6 sc, 2 hdc, 2 hdc inc, 2 hdc, 6 sc (20)
+
+Round 3: 7 sc, 2 hdc, 2 hdc inc, 2 hdc, 7 sc (22)
+
+Round 4: inc, 7 sc, 6 hdc, 7 sc, inc (24)
+
+Round 5: 24 sc
+
+Round 6: 24 sc
+
+Round 7: (2 sc, dec) x 6 (18)
+
+Round 8: (sc, dec) x 6 (12)
+
+Stuff whole body completely
+
+Round 9: 6 dec (6)
+
+Finish off and sew final tail ring together
+
+## Feet
+In gold/yellow, make 4
+
+Round 1: ch 2. Make 6 sc in first chain space (6)
+
+Round 2: 6 inc (12)
+
+Round 3: (2 sc, inc) x 4 (16)
+
+Round 4: 2 sc, 4 dec, 6 sc (12)
+
+Round 5: 4 dec, 4 sc (8)
+
+Round 6-7: 8 sc (2 rounds)
+
+Finish off, leave a long yarn tail for sewing, and stuff densely with fiber fill.
+
+Sew to bottom of body according to finished product photos.
+
+## Ears
+In gold/yellow, make 2
+
+Round 1: Ch 2. Make 8 sc in the first chain space (8)
+
+Round 2: 8 sc
+
+Rounds 3-5: 4 dc, 4 sc (3 rounds)
+
+Rounds 6-7: 8 sc (2 rounds)
+
+Finish off, leave long yarn tail for sewing, and stuff with a tiny bit of fiber fill
+
+Sew to top of head according to finished product photos.
+
+## Eyes (yarn option)
+In white, make 2
+
+Chain 4. Starting in the first stitch from the hook, do 3 sc.
+
+Do 4 sc on the other side of the four chains. 
+
+Finish off white, leaving a long tail for sewing.
+
+In black, do three slip stitches in a triangle shape where the pupil goes.
+
+## Eyes (felt option)
+Cut out white felt ovals in a size you feel is appropriate for your anteaters already complete head.
+
+Cut out black circles to fit in the white eyes. Glue/sew together and glue/sew to the body.
+
+## Letters (yarn option)
+If you don't want to make the letters, then don't! It's your anteater.
+
+In white
+
+U: ch 13. Finish off with tail for sewing
+
+C: ch 13. Finish off with tail for sewing
+
+I: ch 7. Finish off with tail for sewing
+
+While sewing, stick to the same side of the letters. If the yarn crosses over the chains, it will tie them down and look odd.
+
+## Letters (felt option)
+Cut the letters out of white felt in a size you deem appropriate. It may be helpful to print out the UCI logo and cut based on that trace. Follow your heart.
+
+Glue or sew to the body.
+
+`+ copyright_statement("2024-07-29"),
+        spiel: "Level up your bedroom with this adorable UC Irvine anteater mascot. His soft exterior and undeniably odd physique are the perfect addition to any plushie collection. Follow this free pattern with some blue and gold yarn to make it your own. If you want a smaller version for a desk or nightstand, check out my free [UCI Anteater Papercraft Pattern](/crafts/anteater-papercraft).",
+        feature_images: ["/crafts/anteater_crochet_post.jpg", "/crafts/anteater_crochet_complete.jpg"],
+        files: [
+            //{
+            //    name: "PDF Pattern",
+            //    filetype: "pdf",
+            //    drive: "",
+            //},
+        ],
+        publish_date: "2024-07-29",
     }
 
 };

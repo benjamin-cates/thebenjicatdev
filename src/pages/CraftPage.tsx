@@ -33,7 +33,7 @@ const CraftPage: React.FC = () => {
                 ))}
             </div>
             <ReactMarkdown>{craft.spiel}</ReactMarkdown>
-            <h1>Downloads</h1>
+            {craft.files.length > 0 && <h1>Downloads</h1>}
             <div className="downloads_list">
                 {craft.files.map(({ name, drive, filetype, desc }) => {
                     return <div className="download_item" key={name}>
