@@ -462,6 +462,7 @@ const Project: React.FC = (_props: {}) => {
     const params = useParams();
     const name = params.project_name;
     return <>
+        <title>{"thebenjicat.dev | " + name}</title>
         <Header></Header>
         <div>
             {name == "ant_logic" && <AntLogic></AntLogic>}

@@ -13,12 +13,18 @@ header {
   display: flex;
   align-items: center;
 }
-#pfp {
+#craft_pfp,
+#portrait_pfp {
   border-radius: 100%;
   width: 3rem;
   height: 3rem;
   margin-right: 1em;
 }
+
+#craft_pfp {
+  box-shadow: none;
+}
+
 #pronouns {
   color: #a1a1a1;
   font-size: 0.75em;
@@ -40,12 +46,6 @@ header {
 }
 .switcher > a:visited {
   color: white;
-}
-.switcher > a.active {
-  background: #2e3a51;
-}
-.switcher > a.active:hover {
-  background: #3e4a61;
 }
 .switcher > a {
   font-size: 1.5em;
@@ -79,6 +79,9 @@ div.page {
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: 3rem;
+  }
+  .switcher > .inactive {
+    display: none;
   }
 }
 a,

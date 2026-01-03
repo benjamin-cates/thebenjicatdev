@@ -26,6 +26,7 @@ const HomeElement: React.FC<ProjectProps> = (props: ProjectProps) => {
 
 const Home: React.FC = (_props: {}) => {
     return <>
+        <title>thebenjicat.dev</title>
         <Header></Header>
         <div id="title">
             <div id="title_inner">

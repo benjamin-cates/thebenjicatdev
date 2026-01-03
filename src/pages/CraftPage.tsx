@@ -21,7 +21,7 @@ const CraftPage: React.FC = () => {
         return <NotFound></NotFound>
     }
     return <>
-        <title>{craft.name}</title>
+        <title>{craft.name + " | The Benji Crafts"}</title>
         <meta name="description" content={craft.page_description}></meta>
         <Header></Header>
         <div className="craft_page">
@@ -49,6 +49,8 @@ const CraftPage: React.FC = () => {
                 })}
             </div>
             <ReactMarkdown>{craft.body}</ReactMarkdown>
+            <h1>See More</h1>
+            <p>Want to see more patterns like this? Follow <a href="https://instagram.com/the.benji.crafts">@the.benji.crafts</a> on Instagram or check out <a href="/crafts">other patterns</a> on this website.</p>
 
         </div>
     </>;

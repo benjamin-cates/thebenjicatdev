@@ -12,6 +12,7 @@ const CraftsHome: React.FC<{}> = (_props: {}) => {
     }
     list.sort((a, b) => a.publish_date < b.publish_date ? 1 : -1);
     return <>
+        <title>The Benji Crafts</title>
         <Header></Header>
         <div className="craft_page_list">
             {

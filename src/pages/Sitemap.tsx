@@ -11,6 +11,7 @@ const STYLE = {
 
 const Sitemap: React.FC = (_props: {}) => {
     return <>
+        <title>thebenjicat.dev sitemap</title>
         <Header></Header>
         <div className="page">
             <h1><a href='/'>thebenjicat.dev</a> sitemap</h1>

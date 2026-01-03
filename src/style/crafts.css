@@ -1,6 +1,9 @@
 .craft_home_img {
   width: calc(min(20rem, 80vw));
 }
+.craft_page {
+  padding-bottom: 3rem;
+}
 .craft_page_list {
   display: flex;
   flex-direction: row;
