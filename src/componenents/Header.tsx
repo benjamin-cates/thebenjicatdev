@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router";
+import { logos } from "./Logos";
 
 const Header: React.FC = (_props: {}) => {
     let location = useLocation();
@@ -15,8 +16,14 @@ const Header: React.FC = (_props: {}) => {
                 </span>
             </div>
             <div className="switcher">
-                <Link className="inactive" to="/crafts">🧶 Crafts</Link>
-                <Link className="active" to="/">🧑‍💻 Code</Link>
+                {location.pathname == "/crafts" &&
+                    <>
+                        <Link to="/">🧑‍💻 Code</Link>
+                    </>
+                    || <>
+                        <Link to="/crafts">{logos.home}</Link>
+                    </>
+                }
             </div>
         </header>;
     }
@@ -31,8 +38,14 @@ const Header: React.FC = (_props: {}) => {
                 </span>
             </div>
             <div className="switcher">
-                <Link className="active" to="/crafts">🧶 Crafts</Link>
-                <Link className="inactive" to="/">🧑‍💻 Code</Link>
+                {location.pathname == "/" &&
+                    <>
+                        <Link to="/crafts">🧶 Crafts</Link>
+                    </>
+                    || <>
+                        <Link to="/">{logos.home}</Link>
+                    </>
+                }
             </div>
         </header>;
     }

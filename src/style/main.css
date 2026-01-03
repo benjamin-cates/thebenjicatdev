@@ -47,18 +47,16 @@ header {
 .switcher > a:visited {
   color: white;
 }
-.switcher > a:hover {
-  transform: rotate(2deg) scale(1.05);
-}
 .switcher > a {
   font-size: 1.5em;
-  display: block;
   background: #111;
   border-radius: 0.5rem;
   color: white;
   text-decoration: none;
   padding: 0.5rem;
   transition: all 0.2s;
+  display: flex;
+  justify-content: center;
 }
 .switcher > a:hover {
   color: white;
