@@ -47,6 +47,9 @@ header {
 .switcher > a:visited {
   color: white;
 }
+.switcher > a:hover {
+  transform: rotate(2deg) scale(1.05);
+}
 .switcher > a {
   font-size: 1.5em;
   display: block;
@@ -55,7 +58,7 @@ header {
   color: white;
   text-decoration: none;
   padding: 0.5rem;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 .switcher > a:hover {
   color: white;

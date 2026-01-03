@@ -4,6 +4,8 @@ import { crafts_list } from "./crafts";
 import { NotFound } from "./NotFound";
 import { Header } from "../componenents/Header";
 import ReactMarkdown from 'react-markdown';
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 const file_logos: { [key: string]: ReactElement } = {
     blend: <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M440-181 240-296q-19-11-29.5-29T200-365v-230q0-22 10.5-40t29.5-29l200-115q19-11 40-11t40 11l200 115q19 11 29.5 29t10.5 40v230q0 22-10.5 40T720-296L520-181q-19 11-40 11t-40-11Zm0-92v-184l-160-93v185l160 92Zm80 0 160-92v-185l-160 93v184ZM80-680v-120q0-33 23.5-56.5T160-880h120v80H160v120H80ZM280-80H160q-33 0-56.5-23.5T80-160v-120h80v120h120v80Zm400 0v-80h120v-120h80v120q0 33-23.5 56.5T800-80H680Zm120-600v-120H680v-80h120q33 0 56.5 23.5T880-800v120h-80ZM480-526l158-93-158-91-158 91 158 93Zm0 45Zm0-45Zm40 69Zm-80 0Z" /></svg>,
@@ -29,10 +31,10 @@ const CraftPage: React.FC = () => {
             <div className="craft_images">
                 {craft.feature_images.map((img, idx) => (
                     <img className="feature_image" src={img} key={idx}></img>
-
                 ))}
             </div>
-            <ReactMarkdown>{craft.spiel}</ReactMarkdown>
+            <ReactMarkdown components={{
+            }}>{craft.spiel}</ReactMarkdown>
             {craft.files.length > 0 && <h1>Downloads</h1>}
             <div className="downloads_list">
                 {craft.files.map(({ name, drive, filetype, desc }) => {
@@ -48,7 +50,12 @@ const CraftPage: React.FC = () => {
                     </div>;
                 })}
             </div>
-            <ReactMarkdown>{craft.body}</ReactMarkdown>
+            <ReactMarkdown components={{
+                img(props) {
+                    console.log(props);
+                    return <Zoom zoomMargin={40} classDialog="custom-zoom"><img {...props}></img></Zoom>
+                }
+            }}>{craft.body}</ReactMarkdown>
             <h1>See More</h1>
             <p>Want to see more patterns like this? Follow <a href="https://instagram.com/the.benji.crafts">@the.benji.crafts</a> on Instagram or check out <a href="/crafts">other patterns</a> on this website.</p>
 
