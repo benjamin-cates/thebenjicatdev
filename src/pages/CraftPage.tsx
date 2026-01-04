@@ -57,7 +57,7 @@ const CraftPage: React.FC = () => {
                 }
             }}>{craft.body}</ReactMarkdown>
             <h1>See More</h1>
-            <p>Want to see more patterns like this? Follow <a href="https://instagram.com/the.benji.crafts">@the.benji.crafts</a> on Instagram or check out <a href="/crafts">other patterns</a> on this website.</p>
+            <p>Want to see more patterns like this? Follow <a href="https://instagram.com/the.benji.crafts">@the.benji.crafts</a> on Instagram or check out <a href="/crafts">other patterns</a> on this website. If you see any issues with this pattern or want to connect, reach out to me on Instagram!</p>
 
         </div>
     </>;

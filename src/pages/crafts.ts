@@ -520,7 +520,90 @@ Glue or sew to the body.
             //},
         ],
         publish_date: "2024-07-29",
-    }
+    },
+    "stardrop-papercraft": {
+        name: "Stardrop Papercraft",
+        page_description: "Free Stardrop papercraft from Stardew Valley",
+        body: papercraft_choosing_a_file + `
+        
+# Quick Info
+
+**Time estimate**: 90 minutes
+
+**Dimensions (inches)**: **1** depth x **5** width x **4.5** height
+
+**Page**: 1
+
+**Pieces**: 6
+
+` + papercraft_instructions_generic + `
+
+## Fruit
+
+Cut, crease, and glue the front, bottom, and core (pieces 1, 2, and 3). See the picture below.
+
+![Stardrop front](/crafts/stardrop_front.jpg)
+
+Before gluing on the back, you may want to improve the balance of the piece. Glue two heavy objects on the inside of the two feet. Unfortunately, the space is too small for a dime, so I suggest you use a small run of staples glued upside down. If you don't have that, the scrap paper from this pattern folded over many times.
+
+Cut and crease the back (piece 4). Glue to only the core first. Then go around the outside and glue the flaps together.
+
+![Stardrop back](/crafts/stardrop_back.jpg)
+
+## Leaves
+
+Cut and crease the leaf base (piece 5). Glue everything except the four inner tabs.
+
+Cut and crease thea leaf top (piece 6). Glue one side to the leaf base. It should look like the picture below.
+
+![Stardrop leaves top](/crafts/stardrop_leaf_top.jpg)
+
+Pull the other side of the leaf base up to where it fits on the leaf top. Glue in that position. The base should be roughly flat.
+
+![Stardrop leaves almost_done](/crafts/stardrop_leaf_almost_done.jpg)
+
+Finally, glue the two remaining faces to the outside of the leaves.
+
+Attach the leaves to the top of the star using glue.
+
+Congrats on finishing your stardrop papercraft. If you share it on Instagram, please tag me [@the.benji.crafts](https://instagram.com/the.benji.crafts)
+
+![Stardrop completed](/crafts/stardrop_complete.jpg)
+
+`+ papercraft_modification_statement + copyright_statement("2026-01-03"),
+        spiel: "Boost your morning energy with this bedside Stardrop Papercraft Pattern! Inspired by the video game Stardew Valley, this rare item permanently increases your energy. My free papercraft pattern will guide you how to build one from just 1 sheet of paper!",
+        feature_images: ["/crafts/stardrop_post.jpg", "/crafts/stardrop_complete.jpg"],
+        files: [
+            {
+                name: "Letter-size Two-sided Print",
+                filetype: "pdf",
+                drive: "https://drive.google.com/file/d/19XTomqbXAbyPqDlDXrY9sONyRsuDqHOP/view?usp=sharing",
+            },
+            {
+                name: "Letter-size One-sided Print",
+                filetype: "pdf",
+                drive: "https://drive.google.com/file/d/1rCLWaSMUdlCo2jGum_nTvJTFayc5U31M/view?usp=sharing",
+            },
+            {
+                name: "A4-size Two-sided Print",
+                filetype: "pdf",
+                drive: "https://drive.google.com/file/d/1h9nPgR8O5v24tZiLTnFvTVNbY1lWbHMI/view?usp=sharing",
+            },
+            {
+                name: "A4-size One-sided Print",
+                filetype: "pdf",
+                drive: "https://drive.google.com/file/d/1sWV-hkApCucC7LaX63gOtBNFc_Gp5d7Y/view?usp=sharing",
+            },
+            {
+                name: "Google Drive Folder",
+                filetype: "folder",
+                drive: "https://drive.google.com/drive/folders/1riPxkadCMHglKw2YuC4PgSukeun0roAo?usp=sharing",
+            }
+        ],
+        publish_date: "2026-01-03",
+
+    },
+
 
 };
 
