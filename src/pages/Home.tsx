@@ -92,6 +92,13 @@ const Home: React.FC = (_props: {}) => {
             </div>
             <div className="experience_column">
                 <HomeElement
+                    title="Ball Blitz"
+                    alt="3D ball matching game"
+                    image="/images/ball_blitz.webp"
+                    try="https://benjamin-cates.github.io/ball-blitz"
+                    spiel="A 3D version of Suika built with React Three Fiber. Match sports balls and aim for the highest score!"
+                ></HomeElement>
+                <HomeElement
                     title="Interactive EM"
                     alt="Electric field visualization"
                     image="/images/interactive_em.webp"
